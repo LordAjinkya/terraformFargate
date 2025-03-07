@@ -11,7 +11,7 @@ resource "aws_ecs_service" "app_service" {
 
   network_configuration {
     subnets          = [aws_subnet.public_subnet_1.id, aws_subnet.public_subnet_2.id]
-    security_groups = [data.aws_security_group.ecs_task_sg.id]
+    security_groups = [aws_security_group.ecs_task_sg.id]
   }
 
   load_balancer {

@@ -4,7 +4,7 @@ resource "aws_ecs_task_definition" "app_task" {
   requires_compatibilities = ["FARGATE"]
   cpu                      = "256"
   memory                  = "512"
-  execution_role_arn      = "arn:aws:iam::503561421231:role/TerraformEC2Role"
+  execution_role_arn      = "arn:aws:iam::509399591430:role/ECS"
 
   container_definitions = <<EOF
   [

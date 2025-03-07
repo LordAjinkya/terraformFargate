@@ -3,17 +3,13 @@ variable "aws_region" {
 }
 
 variable "iam_role_arn" {
-  default = "arn:aws:iam::YOUR_AWS_ACCOUNT_ID:role/YOUR_ECS_TASK_EXECUTION_ROLE_NAME"
+  default = "arn:aws:iam::509399591430:role/ECS"
 }
 
 variable "mymvcweb_image" {
-  default = ""
+  default = "509399591430.dkr.ecr.us-east-1.amazonaws.com/mymvcweb-repo"
 }
 
 variable "reverseproxy_image" {
-  default = ""
-}
-
-variable "log_group_name" {
-  default = ""
+  default = "509399591430.dkr.ecr.us-east-1.amazonaws.com/reverseproxy-repo"
 }
